@@ -3,7 +3,7 @@ from gendiff.formats.plain import form_to_plain
 from gendiff.formats.stylish import form_to_stylish
 
 
-FORMATS {'json': format_json, 'stylish': format_stylish, 'plain': format_plain}
+FORMATS {'json': form_to_json, 'stylish': form_to_stylish, 'plain': form_to_plain}
 
 
 def choice_format(data, format):
