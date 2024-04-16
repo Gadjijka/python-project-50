@@ -1,4 +1,4 @@
-def form_to_plain(data):
+def form_to_plain(data, path=''):
     result = []
     for step in data:
         formatted_step = make_plain(step, path)
@@ -7,7 +7,7 @@ def form_to_plain(data):
     return '\n'.join(result)
 
 
-def make_plain(step, path = ''):
+def make_plain(step, path=''):
     current_key = step.get('name')
     current_path = f"{path}.{current_key}" if path else current_key
     action = step.get('action')
@@ -19,9 +19,9 @@ def make_plain(step, path = ''):
         return f'Property "{current_path}" was removed'
     if action == 'modified':
         return (
-	    f'Property "{current_path}" was updated.'
-	    f'From {old_value} to {new_value}'
-	)
+            f'Property "{current_path}" was updated.'
+            f'From {old_value} to {new_value}'
+        )
     if action == 'nested':
         children = step.get('children')
         return make_plain(children, current_path)
@@ -32,10 +32,10 @@ def to_str(item):
     if isinstance(item, (list, dict)):
         return '[complex value]'
     elif item is None:
-	return 'null'
-    elif isinstance(value, bool):
-	return str(item).lower()
+        return 'null'
+    elif isinstance(item, bool):
+        return str(item).lower()
     elif isinstance(item, str):
-	return f"'{item}'"
+        return f"'{item}'"
     else:
-	return str(item)
+        return str(item)
