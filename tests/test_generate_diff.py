@@ -15,7 +15,7 @@ def read_file(file_name):
     ('file1.json', 'file2.json', 'json'),
     ('file1.yml', 'file2.yml', 'json')
 ])
-def test_base_logic(file1_name, file2_name, format):
+def test_generate_diff(file1_name, file2_name, format):
     file1_path = 'tests/fixtures/' + file1_name
     file2_path = 'tests/fixtures/' + file2_name
     assert (generate_diff(file1_path, file2_path,
