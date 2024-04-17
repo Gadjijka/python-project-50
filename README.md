@@ -8,6 +8,27 @@
 <div>Json (Вызывается через "-f json")</div>
 
 
+<table>
+  <thead>
+    <tr>
+      <th>Requirements</th>
+      <th>Installation instructions:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Python = > 3.10.12</th>
+      <th>
+          <p align="left">git clone git@github.com:Gadjijka/python-project-50.git</p>
+          <p align="left">make install</p>
+          <p align="left">make build</p>
+          <p align="left">make package-install</p>
+      </th>
+    </tr>
+  </tbody>
+</table>
+
+
 <h2>Пример работы программы:</h2>
 <a href="https://asciinema.org/a/LXYBckL3urBysVeLkO1mt06pB" target="_blank"><img src="https://asciinema.org/a/LXYBckL3urBysVeLkO1mt06pB.svg" /></a>
 <a href="https://asciinema.org/a/2918iVth8yDpXxebND6aBwRCS" target="_blank"><img src="https://asciinema.org/a/2918iVth8yDpXxebND6aBwRCS.svg" /></a>
