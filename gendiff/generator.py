@@ -1,4 +1,4 @@
-def base_logic(first_file, second_file):
+def generator(first_file, second_file):
     difference = []
     keys = first_file.keys() | second_file.keys()
     added = second_file.keys() - first_file.keys()
@@ -23,7 +23,7 @@ def nested(key, first_value, second_value):
     return {
         'action': 'nested',
         'name': key,
-        'children': base_logic(first_value, second_value)
+        'children': generator(first_value, second_value)
     }
 
 

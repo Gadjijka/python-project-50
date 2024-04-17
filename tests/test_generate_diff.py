@@ -1,6 +1,5 @@
 import pytest
 from gendiff.generate_diff import generate_diff
-from gendiff.formats.format import choice_format
 
 
 def read_file(file_name):
@@ -19,11 +18,10 @@ def read_file(file_name):
 def test_base_logic(file1_name, file2_name, format):
     file1_path = 'tests/fixtures/' + file1_name
     file2_path = 'tests/fixtures/' + file2_name
-    assert (choice_format(generate_diff(file1_path, file2_path),
+    assert (generate_diff(file1_path, file2_path,
            format)) == read_file(f'tests/fixtures/expected_{format}.txt')[:-1]
 
 
 def test_unsupported_formats():
     with pytest.raises(ValueError):
-        choice_format(generate_diff('tests/fixtures/file1.json',
-                      'tests/fixtures/file2.json'), 'png')
+        generate_diff('tests/fixtures/file1.json', 'tests/fixtures/file2.json', 'png')
