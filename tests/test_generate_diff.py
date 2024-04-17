@@ -1,5 +1,5 @@
 import pytest
-from gendiff.base_logic import make_a_difference
+from gendiff.generate_diff import make_a_difference
 from gendiff.formats.format import choice_format
 
 
