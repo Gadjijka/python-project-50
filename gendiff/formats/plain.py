@@ -14,17 +14,17 @@ def make_plain(step, path=''):
     new_value = to_str(step.get('new_value'))
     old_value = to_str(step.get('old_value'))
     if action == 'added':
-        return f'Property "{current_path}" was added with value: {new_value}'
+        return f"Property '{current_path}' was added with value: {new_value}"
     if action == 'deleted':
-        return f'Property "{current_path}" was removed'
+        return f"Property '{current_path}' was removed"
     if action == 'modified':
         return (
-            f'Property "{current_path}" was updated.'
+            f"Property '{current_path}' was updated. "
             f'From {old_value} to {new_value}'
         )
     if action == 'nested':
         children = step.get('children')
-        return make_plain(children, current_path)
+        return form_to_plain(children, current_path)
     return None
 
 
