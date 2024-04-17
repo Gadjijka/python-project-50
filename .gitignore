@@ -10,3 +10,4 @@ coverage/
 .coverage
 test-coverage-tool
 htmlcov/
+coverage.xml
