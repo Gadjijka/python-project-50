@@ -6,8 +6,7 @@
 <div>Stylish (Используется поумолчанию либо можно использовать через комманду "-f stylish")</div>
 <div>Plain (Вызывается через "-f plain")</div>
 <div>Json (Вызывается через "-f json")</div>
-
-
+<hr>
 <table>
   <thead>
     <tr>
