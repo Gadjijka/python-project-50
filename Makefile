@@ -19,4 +19,4 @@ test-coverage:
 	poetry run coverage report
 
 test:
-	python3 -m pytest
+	python3 -m pytest tests/test_generate_diff.py
