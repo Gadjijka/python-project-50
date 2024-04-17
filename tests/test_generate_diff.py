@@ -24,4 +24,5 @@ def test_base_logic(file1_name, file2_name, format):
 
 def test_unsupported_formats():
     with pytest.raises(ValueError):
-        generate_diff('tests/fixtures/file1.json', 'tests/fixtures/file2.json', 'png')
+        generate_diff('tests/fixtures/file1.json',
+                      'tests/fixtures/file2.json', 'png')
