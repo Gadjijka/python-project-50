@@ -1,4 +1,4 @@
-<h1>Программа, позволющая сравнить два файла типа JSON и YAML(YML)</h1>
+<h1 align="center">Программа, позволющая сравнить два файла типа JSON и YAML(YML)</h1>
 
 
 ### Hexlet tests and linter status:
