@@ -1,11 +1,11 @@
 from gendiff.cli import arg_parser
-from gendiff.generate_diff import make_a_difference
+from gendiff.generate_diff import generate_diff
 from gendiff.formats.format import choice_format
 
 
 def main():
     args = arg_parser()
-    print(choice_format(make_a_difference(args.first_file, args.second_file),
+    print(choice_format(generate_diff(args.first_file, args.second_file),
           args.format))
 
 
