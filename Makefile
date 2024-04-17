@@ -19,4 +19,4 @@ test-coverage:
 	poetry run coverage report
 
 test:
-	poetry run pytest
+	python3 -m pytest
