@@ -25,6 +25,4 @@ jobs:
         run: |
           make lint
           make test
-      - name: Test & publish code coverage
-        uses: paambaati/codeclimate-action@v5.0.0
 
