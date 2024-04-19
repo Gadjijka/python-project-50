@@ -6,7 +6,7 @@ def generator(first_file, second_file):
         second_value = second_file.get(key)
         if key in second_file.keys() and key not in first_file.keys():
             difference.append(to_add(key, second_value))
-        elif key in first_file.keys and key not in second_file.keys():
+        elif key in first_file.keys() and key not in second_file.keys():
             difference.append(to_delete(key, first_value))
         elif isinstance(first_value, dict) and isinstance(second_value, dict):
             difference.append(nested(key, first_value, second_value))
