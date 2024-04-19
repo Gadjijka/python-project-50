@@ -1,14 +1,12 @@
 def generator(first_file, second_file):
     difference = []
     keys = first_file.keys() | second_file.keys()
-    added = second_file.keys() - first_file.keys()
-    deleted = first_file.keys() - second_file.keys()
     for key in keys:
         first_value = first_file.get(key)
         second_value = second_file.get(key)
-        if key in added:
+        if key in second_file.keys() and key not in first_file.keys():
             difference.append(to_add(key, second_value))
-        elif key in deleted:
+        elif key in first_file.keys and key not in second_file.keys():
             difference.append(to_delete(key, first_value))
         elif isinstance(first_value, dict) and isinstance(second_value, dict):
             difference.append(nested(key, first_value, second_value))
