@@ -26,3 +26,6 @@ def test_unsupported_formats():
     with pytest.raises(ValueError):
         generate_diff('tests/fixtures/file1.json',
                       'tests/fixtures/file2.json', 'png')
+    with pytest.raises(ValueError):
+        generate_diff('tests/fixtures/file3.txt',
+                      'tests/fixtures/file4.txt', 'json')
