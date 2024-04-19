@@ -1,6 +1,6 @@
-from gendiff.formats.json import form_to_json
-from gendiff.formats.plain import form_to_plain
-from gendiff.formats.stylish import form_to_stylish
+from gendiff.formatters.json import form_to_json
+from gendiff.formatters.plain import form_to_plain
+from gendiff.formatters.stylish import form_to_stylish
 
 
 FORMATS = {
