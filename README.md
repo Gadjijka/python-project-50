@@ -4,6 +4,7 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Gadjijka/python-project-50/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Gadjijka/python-project-50/actions)
 <a href="https://codeclimate.com/github/Gadjijka/python-project-50/maintainability"><img src="https://api.codeclimate.com/v1/badges/e4eec67c1dc947e6c6fd/maintainability" /></a>
+<a href="https://codeclimate.com/github/Gadjijka/python-project-50/test_coverage"><img src="https://api.codeclimate.com/v1/badges/e4eec67c1dc947e6c6fd/test_coverage" /></a>
 
 <h3>Форматы вывода, которые поддерживает программа:</h3>
 <div>Stylish (Используется поумолчанию либо можно использовать через комманду "-f stylish")</div>
