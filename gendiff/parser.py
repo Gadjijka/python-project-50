@@ -9,7 +9,7 @@ def load_file_from_path(path):
         return json.load(open(path))
     if type_ in ['yml', 'yaml']:
         return yaml.safe_load(open(path))
-    raise ValueError(f'Unsupported file format: {format}')
+    raise ValueError(f'Unsupported file format: {type_}')
 
 
 def get_file_format(path):
